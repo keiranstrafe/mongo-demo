@@ -67,7 +67,7 @@ const addFruit = async (fruit) => {
 		return
 	}
 
-	await Fruit.insertMany([fruit])
+	await Fruit.create(fruit)
 
 	console.log(`Added ${fruit.name} successfully!`)
 }
